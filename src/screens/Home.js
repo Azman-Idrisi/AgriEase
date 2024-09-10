@@ -22,7 +22,7 @@ const Home = () => {
         <nav className="space-x-8">
           <a href="/home" className="text-blue-800 hover:text-purple-800">Home</a>
           <a href="/services" className="text-black hover:text-gray-800">Services</a>
-          <a href="#" className="text-black hover:text-gray-800">Weather Forecast</a>
+          <a href="https://opkpeh.github.io/weather/" className="text-black hover:text-gray-800">Weather Forecast</a>
           <a href="#" className="text-black hover:text-gray-800">Crop Health</a>
           <a href="#" className="text-black hover:text-gray-800">Farming Tools</a>
           <a href="#" className="text-black hover:text-gray-800">Contact</a>
