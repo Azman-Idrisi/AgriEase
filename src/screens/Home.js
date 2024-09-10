@@ -50,7 +50,7 @@ const Home = () => {
 
       <main className="flex flex-col items-center h-[500px] justify-center mt-20">
         <h1 className="text-6xl font-extrabold text-white text-center">
-          Welcome to the Dashboard
+          Welcome to the AgriEase
         </h1>
 
         <button
