@@ -1,18 +1,31 @@
 import React from 'react';
-import Services from './services';
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-purple-100 min-h-screen">
-      <header className="flex justify-between items-center p-6">
+    <div 
+      className="bg-gradient-to-b from-white to-purple-100 min-h-screen"
+      style={{
+        backgroundImage: 'url(https://img.freepik.com/free-photo/close-up-bananas-hand_23-2151005962.jpg?t=st=1725904636~exp=1725908236~hmac=60686913b81409e3250aa455962a5061a43c62ddd801599e96c6befa188c6ee7&w=1380)', 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center'
+      }}
+    >
+      <header 
+        className="flex justify-between items-center p-6"
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+          backdropFilter: 'blur(10px)', 
+          borderRadius: '12px'
+        }}
+      >
         <h1 className="text-3xl font-bold">AgriEase</h1>
         <nav className="space-x-8">
-          <a href="#" className="text-purple-600 hover:text-purple-800">Home</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Services</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Weather Forcast</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Crop Health</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Farming Tools</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Contact</a>
+          <a href="/home" className="text-blue-800 hover:text-purple-800">Home</a>
+          <a href="/services" className="text-black hover:text-gray-800">Services</a>
+          <a href="#" className="text-black hover:text-gray-800">Weather Forecast</a>
+          <a href="#" className="text-black hover:text-gray-800">Crop Health</a>
+          <a href="#" className="text-black hover:text-gray-800">Farming Tools</a>
+          <a href="#" className="text-black hover:text-gray-800">Contact</a>
         </nav>
         <div className="flex items-center space-x-4">
           <div className="relative">
@@ -25,43 +38,30 @@ const Home = () => {
           </div>
 
           <button
-          className="text-white px-4 py-2 rounded-full"
-          style={{ backgroundColor: '#268c43' }}
-          onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7038'}
-           onMouseLeave={(e) => e.target.style.backgroundColor = '#268c43'}
+            className="text-white px-4 py-2 rounded-full"
+            style={{ backgroundColor: '#268c43' }}
+            onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7038'}
+            onMouseLeave={(e) => e.target.style.backgroundColor = '#268c43'}
           >
-              Site Visit
-                    </button>
-
-
+            Site Visit
+          </button>
         </div>
       </header>
 
-      <main className="flex flex-col items-center justify-center mt-20">
-        <h1 className="text-6xl font-extrabold text-purple-800 text-center">
+      <main className="flex flex-col items-center h-[500px] justify-center mt-20">
+        <h1 className="text-6xl font-extrabold text-white text-center">
           Welcome to the Dashboard
         </h1>
-        <p className="mt-4 text-lg text-gray-500 text-center max-w-xl">
-        AgriEase is a digital platform designed to support farmers and improve their agricultural practices. By providing real-time market information, weather forecasting tools, expert guidance, and technological solutions, AgriAssist empowers farmers to make informed decisions and achieve greater success.
 
-        </p>
         <button
-        className="mt-8 text-white px-6 py-3 rounded-full"
-        style={{ backgroundColor: '#268c43' }}
-        onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7038'}
-         onMouseLeave={(e) => e.target.style.backgroundColor = '#268c43'}
-          >
+          className="mt-8 text-white px-6 py-3 rounded-full"
+          style={{ backgroundColor: '#268c43' }}
+          onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7038'}
+          onMouseLeave={(e) => e.target.style.backgroundColor = '#268c43'}
+        >
           Learn More
-          </button>
-
-
+        </button>
       </main>
-
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-r from-[#507942] to-[#86a55a]">
-          {/* A wavy graphic can be added here using an SVG */}
-        </div>
-
-
     </div>
   );
 }
