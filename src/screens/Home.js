@@ -1,21 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Home = () => {
+  const navigate = useNavigate(); // Create navigate instance
+
   return (
-    <div 
+    <div
       className="bg-gradient-to-b from-white to-purple-100 min-h-screen"
       style={{
-        backgroundImage: 'url(https://img.freepik.com/free-photo/close-up-bananas-hand_23-2151005962.jpg?t=st=1725904636~exp=1725908236~hmac=60686913b81409e3250aa455962a5061a43c62ddd801599e96c6befa188c6ee7&w=1380)', 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center'
+        backgroundImage: 'url(https://img.freepik.com/free-photo/close-up-bananas-hand_23-2151005962.jpg?t=st=1725904636~exp=1725908236~hmac=60686913b81409e3250aa455962a5061a43c62ddd801599e96c6befa188c6ee7&w=1380)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      <header 
+      <header
         className="flex justify-between items-center p-6"
         style={{
-          backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-          backdropFilter: 'blur(10px)', 
-          borderRadius: '12px'
+          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '12px',
         }}
       >
         <h1 className="text-3xl font-bold">AgriEase</h1>
@@ -58,6 +61,7 @@ const Home = () => {
           style={{ backgroundColor: '#268c43' }}
           onMouseEnter={(e) => e.target.style.backgroundColor = '#1e7038'}
           onMouseLeave={(e) => e.target.style.backgroundColor = '#268c43'}
+          onClick={() => navigate('/learnmore')} // Navigate to LearnMore page
         >
           Learn More
         </button>
